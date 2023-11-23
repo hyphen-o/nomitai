@@ -1,0 +1,14 @@
+version: '3.9'
+volumes:
+  node_modules:
+services:
+  nomitai:
+    build:
+      context: ./app
+    tty: true
+    container_name: nomitai-front
+    ports:
+      - 3000:3000
+    volumes:
+      - ./app:/works
+      - node_modules:/works/node_modules
