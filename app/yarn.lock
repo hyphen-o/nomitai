@@ -4048,6 +4048,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-card-flip@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "react-card-flip@npm:1.2.2"
+  peerDependencies:
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: 571ce5f565f4c7474cca826cba6117c7d2349c6a5b6ca5482bb7267c930c28479022d4dc9556f744c4aa2593394f8364d2a54b51fc10855256f4605e6467d751
+  languageName: node
+  linkType: hard
+
 "react-clientside-effect@npm:^1.2.6":
   version: 1.2.6
   resolution: "react-clientside-effect@npm:1.2.6"
@@ -4304,6 +4314,7 @@ __metadata:
     next: "npm:^14.0.3"
     prettier: "npm:^3.1.0"
     react: "npm:^18.2.0"
+    react-card-flip: "npm:^1.2.2"
     react-dom: "npm:^18.2.0"
     typescript: "npm:^5.3.2"
   languageName: unknown
