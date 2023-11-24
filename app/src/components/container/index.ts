@@ -1,1 +1,1 @@
-export { ContainerApp } from "@/components/container/container-app";
+export { ContainerApp } from "@/components/container/container-app"

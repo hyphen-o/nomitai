@@ -9,11 +9,11 @@ import {
   DrawerHeader,
   DrawerBody,
   useDisclosure
-} from "@chakra-ui/react";
-import { QuestionIcon } from "@chakra-ui/icons";
+} from "@chakra-ui/react"
+import { QuestionIcon } from "@chakra-ui/icons"
 
 export const DrawerHelp = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <>
       <QuestionIcon ml={"10px"} onClick={onOpen} />
@@ -41,5 +41,5 @@ export const DrawerHelp = () => {
         </DrawerContent>
       </Drawer>
     </>
-  );
-};
+  )
+}
