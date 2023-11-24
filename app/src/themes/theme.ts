@@ -1,9 +1,9 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react"
 
 const config = {
   initialColorMode: "dark",
   useSystemColorMode: false
-};
+}
 
 const styles = {
   global: {
@@ -24,8 +24,8 @@ const styles = {
       fontWeight: "bold"
     }
   }
-};
+}
 
-const theme = extendTheme({ config, styles });
+const theme = extendTheme({ config, styles })
 
-export { theme };
+export { theme }

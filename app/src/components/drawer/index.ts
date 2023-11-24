@@ -1,1 +1,1 @@
-export { DrawerHelp } from "@/components/drawer/drawer-help";
+export { DrawerHelp } from "@/components/drawer/drawer-help"
