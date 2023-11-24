@@ -1,7 +1,10 @@
+import { getRandomGame } from "@/constants"
 import { Box, Flex, Button, Text, Tag, TagLabel } from "@chakra-ui/react"
 import Image from "next/image"
 import { useState } from "react"
 import ReactCardFlip from "react-card-flip"
+import { Link } from "@chakra-ui/react"
+import { ExternalLinkIcon } from "@chakra-ui/icons"
 
 export const CardFlip = () => {
   const [deg, setDeg] = useState(0)
@@ -32,13 +35,7 @@ export const CardFlip = () => {
         })
       }
       if (second === 630) {
-        setGame({
-          title: "qwe",
-          description: {
-            overview: "qwe",
-            url: "qwe"
-          }
-        })
+        setGame(getRandomGame())
       }
     }
   }
@@ -102,9 +99,19 @@ export const CardFlip = () => {
             <Tag borderRadius="full" colorScheme="red">
               <TagLabel>URL</TagLabel>
             </Tag>
-            <Text color={"gray.600"} ml={"20px"} my={"5px"} size={"lg"}>
-              {game.description.url}
-            </Text>
+            <Link
+              color={"gray.600"}
+              display={"block"}
+              href={game.description.url}
+              isExternal
+              ml={"20px"}
+              my={"5px"}
+              size={"lg"}
+            >
+              <Flex align={"center"}>
+                {game.description.url} <ExternalLinkIcon ml="5px" />
+              </Flex>
+            </Link>
           </Box>
         </div>
       </ReactCardFlip>
