@@ -47,7 +47,13 @@ export const CardFlip = () => {
   return (
     <>
       <ReactCardFlip flipDirection={"vertical"} isFlipped={isFlipped}>
-        <div onClick={flipCard}>
+        <div
+          style={{
+            backfaceVisibility: "hidden",
+            transform: "translate3d(0, 0, 0)"
+          }}
+          onClick={flipCard}
+        >
           <Flex
             alignItems={"center"}
             bg={"pink.50"}
